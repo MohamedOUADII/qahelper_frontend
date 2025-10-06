@@ -10,6 +10,11 @@ export default function TestCaseList({ testCases, onDeleteTestCase }) {
               <h5 className="card-title">{tc.title}</h5>
               <p><strong>Framework:</strong> {tc.framework}</p>
               <p><strong>Language:</strong> {tc.language}</p>
+              <p><strong>Input:</strong></p>
+              <pre className="bg-light p-2" style={{ overflowX: "auto" }}>
+                {tc.inputText}
+              </pre>
+              <p><strong>Output:</strong></p>
               <pre className="bg-light p-2" style={{ overflowX: "auto" }}>
                 {tc.generatedCode}
               </pre>
